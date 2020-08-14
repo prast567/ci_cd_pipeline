@@ -21,9 +21,9 @@ def scale(payload):
 
 @app.route("/")
 def home():
-    #html = f"<h3>Sklearn Prediction Home</h3>"
-    #return html.format(format)
-    return jsonify({'prediction': [ 20.35373177134412 ]})
+    html = f"<h3>Sklearn Prediction Home</h3>"
+    return html.format(format)
+    #return jsonify({'prediction': [ 20.35373177134412 ]})
 
 
 # TO DO:  Log out the prediction value
