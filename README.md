@@ -29,7 +29,8 @@ Next, I have integrated this project with Azure Pipelines to enable Continuous D
 * Project running on Azure App Service
 	- To run the application we just need to start the web app named "flask-pred-app" by just clicking the "start" button.
 	- Then, the application can be found running at the URL mentioned.
-	- ![project_running](screenshots/3_project_running.PNG)
+	- ![app_running](screenshots/3_app_running_azure.PNG)
+
 
 * Project cloned into Azure Cloud Shell
 	- First, we need to create a Github repository
@@ -57,14 +58,16 @@ Next, I have integrated this project with Azure Pipelines to enable Continuous D
 
 
 * Running Azure App Service
-	- ![app_running](screenshots/3_app_running_azure.PNG)
+	- ![project_running](screenshots/3_project_running.PNG)
+	- ![project_deployed](screenshots/14_deployed.PNG)
+
 
 * Successful prediction from deployed flask app in Azure Cloud Shell> 
 	- ![prediction](screenshots/9_prediction.PNG)
 	
 * Github badge
 	- ![prediction](screenshots/10_github_badge.PNG)
-	
+
 * command.sh shell script
 	- ![commands](screenshots/11_commands.PNG)
 	
@@ -74,7 +77,9 @@ Next, I have integrated this project with Azure Pipelines to enable Continuous D
 * GitHub actions status
 	- ![Github_actions](screenshots/13_github_actions.PNG)
 
-	
+
+
+
 ## Enhancements
 
 Currently we are making prediction only for housing price, but the project can be extended to models as well.
@@ -83,6 +88,5 @@ This project could be extended to any pre-trained machine learning model, such a
 ## Demo 
 Link to screencast on youtube:-
 https://www.youtube.com/watch?v=5Mle_CbwYoU&feature=youtu.be
-
 
 
