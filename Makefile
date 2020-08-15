@@ -6,7 +6,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest test_app.py
+	pytest test_app.py
 	#python -m pytest --nbval notebook.ipynb
 
 
