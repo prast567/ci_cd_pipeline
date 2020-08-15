@@ -6,7 +6,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=rootdir tests/*.py
+	python -m pytest -vv --cov=/home/prast/ci_cd_pipeline tests/*.py
 	#python -m pytest --nbval notebook.ipynb
 
 
