@@ -1,7 +1,9 @@
+"""app class"""
+
 import logging
 from os import environ
 
-from flask import Flask, request, jsonify
+from flask import Flask, jsonify
 from flask.logging import create_logger
 
 #import pandas as pd
@@ -15,7 +17,7 @@ LOG.setLevel(logging.INFO)
 def scale(payload):
     """Scales Payload"""
 
-    LOG.info("Scaling Payload: %s" %payload)
+#    LOG.info("Scaling Payload: %s" %payload)
     scaler = StandardScaler().fit(payload)
     scaled_adhoc_predict = scaler.transform(payload)
     return scaled_adhoc_predict
