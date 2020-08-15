@@ -65,9 +65,16 @@ Next, I have integrated this project with Azure Pipelines to enable Continuous D
 * Github badge
 	- ![prediction](screenshots/10_github_badge.PNG)
 	
+* command.sh shell script
+	- ![commands](screenshots/11_commands.PNG)
+	
+* Github yml file
+	- ![Github_yml](screenshots/12_github_yml.PNG)
+	
+* GitHub actions status
+	- ![Github_actions](screenshots/13_github_actions.PNG)
 
-
-
+	
 ## Enhancements
 
 Currently we are making prediction only for housing price, but the project can be extended to models as well.
