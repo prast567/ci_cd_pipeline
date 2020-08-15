@@ -25,7 +25,7 @@ def scale(payload):
 @app.route("/")
 def home():
     """index page"""
-    html = "<h3>Sklearn Prediction Home- azure pipeline</h3>"
+    html = "<h3>Sklearn Prediction Home</h3>"
     return html.format(format)
 
 
