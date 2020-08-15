@@ -41,7 +41,7 @@ Next, I have integrated this project with Azure Pipelines to enable Continuous D
 	- ![cloned_to_az_shell](screenshots/4_git_clone.PNG)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
-	- Now, we run the "make all" command to:-
+	- Now, we run the "make all" command to
 		- install all the dependencies
 		- perform linting using pylint
 		- perform testing using pytest
