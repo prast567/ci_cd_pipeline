@@ -17,7 +17,7 @@ Next, I have integrated this project with Azure Pipelines to enable Continuous D
 
 
 * Architectural Diagram 
-![architectural_diagram](screenshots/1_architectural_diagram.png)
+![architectural_diagram](screenshots/1_architectural_diagram.PNG)
 
 
 * Project running inside a Docker container
