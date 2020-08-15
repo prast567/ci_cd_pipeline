@@ -65,7 +65,7 @@ def predict():
     #LOG.info(f"inference payload DataFrame: {inference_payload}")
     #scaled_payload = scale(inference_payload)
     #prediction = list(clf.predict(scaled_payload))
-    return jsonify({'prediction': [ 20.35373177134412 ]})
+    return jsonify({'prediction': [20.35373177134412]})
 
 if __name__ == "__main__":
     HOST = environ.get('SERVER_HOST', 'localhost')
