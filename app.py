@@ -1,12 +1,12 @@
 """app class"""
 
 import logging
+import pandas as pd
 from os import environ
 
-from flask import Flask, jsonify
+from flask import Flask, request, jsonify
 from flask.logging import create_logger
 
-#import pandas as pd
 from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
 
@@ -62,9 +62,9 @@ def predict():
 
 
     json_payload = request.json
-    LOG.info(f"JSON payload: {json_payload}")
+    LOG.info(f"JSON payload: %s" %json_payload)
     inference_payload = pd.DataFrame(json_payload)
-    LOG.info(f"inference payload DataFrame: {inference_payload}")
+    LOG.info("inference payload DataFrame: %s" %inference_payload)
     scaled_payload = scale(inference_payload)
     prediction = list(clf.predict(scaled_payload))
     return jsonify({'prediction': prediction})
