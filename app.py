@@ -1,9 +1,10 @@
-from flask import Flask, request, jsonify
-from flask.logging import create_logger
 import logging
 from os import environ
 
-import pandas as pd
+from flask import Flask, request, jsonify
+from flask.logging import create_logger
+
+#import pandas as pd
 from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
 
@@ -14,7 +15,7 @@ LOG.setLevel(logging.INFO)
 def scale(payload):
     """Scales Payload"""
 
-    LOG.info(f"Scaling Payload: {payload}")
+    LOG.info("Scaling Payload: %s" %payload)
     scaler = StandardScaler().fit(payload)
     scaled_adhoc_predict = scaler.transform(payload)
     return scaled_adhoc_predict
@@ -53,7 +54,7 @@ def predict():
     }
 
     result looks like:
-    { "prediction": [ 20.35373177134412 ] }
+    { "prediction": [20.35373177134412] }
 
     """
 
