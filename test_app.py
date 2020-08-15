@@ -1,5 +1,5 @@
 import json
-#import requests
+import requests
 def test_app_up():
     url = 'https://flask-pred-app.azurewebsites.net/'
     response = requests.get(url)
