@@ -10,7 +10,7 @@ Next, I have integrated this project with Azure Pipelines to enable Continuous D
 ## Project Plan
 
 * Link to a Trello board for the project:- https://trello.com/b/LTELtbvp/building-ci-cd-pipeline
-* Link to a spreadsheet that includes the original and final project plan- https://drive.google.com/drive/folders/1lVPWFiWeCpOKcMaGJXZDJzb-NXpPQTpx?usp=sharing
+* Link to a spreadsheet that includes the original and final project plan- https://github.com/prast567/ci_cd_pipeline/blob/master/Project-Planning.xlsx
 
 ## Instructions
 
