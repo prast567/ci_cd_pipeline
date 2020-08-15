@@ -61,19 +61,18 @@ def predict():
     """
 
 
-    #json_payload = request.json
-    #LOG.info(f"JSON payload: {json_payload}")
-    #inference_payload = pd.DataFrame(json_payload)
-    #LOG.info(f"inference payload DataFrame: {inference_payload}")
-    #scaled_payload = scale(inference_payload)
-    #prediction = list(clf.predict(scaled_payload))
-    return jsonify({'prediction': [20.35373177134412]})
+    json_payload = request.json
+    LOG.info(f"JSON payload: {json_payload}")
+    inference_payload = pd.DataFrame(json_payload)
+    LOG.info(f"inference payload DataFrame: {inference_payload}")
+    scaled_payload = scale(inference_payload)
+    prediction = list(clf.predict(scaled_payload))
+    return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
     HOST = environ.get('SERVER_HOST', 'localhost')
     try:
-        #PORT = int(environ.get('SERVER_PORT', '5555'))
-        PORT = 3000
+        PORT = int(environ.get('SERVER_PORT', '443'))
     except ValueError:
         PORT = 3000
     #app.run(HOST, PORT, ssl_context='adhoc')
